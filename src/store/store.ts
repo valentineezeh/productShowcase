@@ -4,9 +4,9 @@ import {
   Action,
   combineReducers,
 } from "@reduxjs/toolkit";
-// import productReducer from "../components/ProductSegment/ProductSlice";
+import productReducer from "../components/ProductSegment/ProductSlice";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ productReducer });
 
 export const store = configureStore({
   reducer: rootReducer,
