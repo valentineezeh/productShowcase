@@ -39,7 +39,7 @@ const productSlice = createSlice({
     builder.addCase(fetchProducts.rejected, (state, action) => {
       state.isLoading = false;
       state.products = [];
-      state.error = "Oops! something went wrong";
+      state.error = "Oops! Something went wrong, kindly try again.";
     });
   },
 });
